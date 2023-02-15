@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap');
+
+// custom variables
+$primary:       #f7dece;
+$secondary:     #b0a390;
+$success:       #ccccbb;
+$info:          #9ec4bb;
+$warning:       #b17d50;
+// $danger:        $red !default;
+$light:         #f4f4f4;
+$dark:          #2d2e2c;
+
+// .color1 { #f7dece };
+// .color2 { #eed7c5 };
+// .color3 { #ccccbb };
+// .color4 { #9ec4bb };
+// .color5 { #2d2e2c };
+
+// .color1 { #ffcfad };
+// .color2 { #ffe4b8 };
+// .color3 { #e6d1b1 };
+// .color4 { #b8aa95 };
+// .color5 { #5e5a54 };
+
+
+// custon typography
+    $font-family-base: 'Sorts Mill Goudy', serif;
+
+#header{
+    position: relative;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $primary;
+    opacity: 0.85;
+}
+
+#container_h{
+    position: relative;
+    z-index: 2;
+}
+
+
+@media screen and (min-width: 768px) {
+    .news-input {
+        width: 50%;
+    }
+}
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss'
+
