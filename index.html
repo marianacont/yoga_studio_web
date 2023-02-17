@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles/dist/style.css">
     <title>Yoga Studio</title>
 </head>
@@ -11,11 +12,11 @@
     <!-- Imagenes y videos en: https://www.pexels.com/es-es/collections/yoga-yf8xg07/ -->
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary">
+    <nav class="navbar navbar-expand-lg bg-primary fixed-bottom sticky-sm-top">
         <div class="container">
             <a href="#" class="navbar-brand">Yoga</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-            <span class="navbar-toggler-icon"></span> </button>
+                <i class="bi bi-list"></i> </button>
 
             <div class="collapse navbar-collapse text-end pt-2" id="navmenu">
                 <ul class="navbar-nav ms-auto">
@@ -23,10 +24,10 @@
                         <a href="#about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#classes" class="nav-link">Classes</a>
+                        <a href="#instructor" class="nav-link">Instructors</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#instructor" class="nav-link">Instructors</a>
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -36,11 +37,11 @@
     <!-- Header -->
     <header id="header" class="bg-primary d-flex align-items-center text-center">
         <div id="container_h" class="container">
-            <div class="d-sm-flex align-items-center justify-content-between col-6 m-auto">
+            <div class="d-sm-flex align-items-center justify-content-between col-md-6 m-auto">
                 <div class="pe-4">
                     <h1 class="fs-1">Yoga <span class="text-warning">Studio</span></h1>
                     <p class="my-4">Yoga is a group of physical, mental, and spiritual practices or disciplines which originated in ancient India and aim to control and still the mind, recognizing a detached witness-consciousness untouched by the mind and mundane suffering</p>
-                    <button class="btn btn-warning text-light">Try a free lesson</button>       
+                    <a class="btn btn-warning text-light" href="#contact">Try a free lesson</a>       
                 </div>
             </div>            
         </div>
@@ -53,63 +54,61 @@
         <section class="quote bg-success">
             <div class="container text-center">
             <div class="row align-items-center col-10 m-auto">
-                <div class="col">
+                <div class="col col-12 col-md-6">
                     <hr>
                     <h2>"Yoga does not just change the way we see things, it transforms the person who sees."</h2>
                     <p>B. K. S. Iyengar</p>
                     <hr>
                 </div>
                 <div class="col">
-                    <img class="w-100 cover" src="assets/img/pexels-yan-krukau-8436694.jpg" alt="">
+                    <img class="img-fluid cover" src="assets/img/pexels-yan-krukau-8436694.jpg" alt="">
                 </div>
             </div>
             </div>
         </section>
 
-        <section class="clases">
+        <section id="about" class="clases">
             <div class="layer p-5">
                 <div class="row align-items-center m-auto">
-                    <div class="col">
-                        <img class="img-fluid rounded" src="assets/img/pexels-yan-krukau-8436945.jpg" alt="">
+                    <div class="col col-12 col-md-6 order-2 order-md-1">
+                        <img class="img-fluid rounded-5 rounded-end" src="assets/img/pexels-yan-krukau-8436945.jpg" alt="">
                     </div>
-                    <div class="col">
+                    <div class="col order-md-2">
                         <h2>Our classes</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur porro illum, molestiae explicabo nulla necessitatibus quo ex suscipit, fuga dicta tempora aut voluptate perspiciatis harum, nostrum aperiam officia veniam labore voluptatum minus quae. Totam voluptas a ratione beatae exercitationem aut eveniet adipisci nulla vel sint? Soluta nulla nihil perferendis voluptatem.</p>
                     </div>
                 </div>
-                <section class="p-5">
+                <section class="py-5">
                     <div class="container">
-                        <h2 class="text-center pb-3">Yoga Benefits</h2>
-                      <div class="row text-center">
+                        <h3 class="text-center pb-3"><strong>Yoga Benefits</strong></h3>
+                      <div class="row text-center g-4">
                         <div class="col-md">
-                            <div class="card bg-dark text-light">
+                            <div class="card bg-dark text-light rounded-5">
                                 <div class="card-body text-center">
                                     <i class="h1 bi bi-suit-heart-fill"></i>
                                     <h3 class="card-title mb-3">Your Health</h3>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam cupiditate iure ipsum libero obcaecati quis?</p>
-                                    <a href="#" class="btn btn-primary">Read More</a>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos deserunt sit sint, facere accusamus tenetur repellat fugiat sed numquam aliquid perspiciatis voluptate ad pariatur qui eius autem reprehenderit assumenda quasi? Quo quibusdam asperiores inventore architecto.</p>
+                                    
                                 </div>
                             </div>
                         </div>
             
                         <div class="col-md">
-                            <div class="card bg-dark text-light">
+                            <div class="card bg-dark text-light rounded-5">
                                 <div class="card-body text-center">
                                     <i class="h1 bi bi-wind"></i>
                                     <h3 class="card-title mb-3">Harmony</h3>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam cupiditate iure ipsum libero obcaecati quis?</p>
-                                    <a href="#" class="btn btn-primary">Read More</a>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda consequatur voluptate et adipisci enim illo, cum nobis nulla, ea ab doloribus repellendus fugit dicta. Velit dolorum at enim nisi repudiandae nihil unde, sed nostrum illum aspernatur aperiam cupiditate! Molestias, obcaecati!</p>
                                 </div>
                             </div>
                         </div>
             
                         <div class="col-md">
-                            <div class="card bg-dark text-light">
+                            <div class="card bg-dark text-light rounded-5">
                                 <div class="card-body text-center">
                                     <i class="h1 bi bi-people-fill"></i>
                                     <h3 class="card-title mb-3">Connect</h3>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam cupiditate iure ipsum libero obcaecati quis?</p>
-                                    <a href="#" class="btn btn-primary">Read More</a>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur nam cumque odio natus tenetur non architecto laudantium, alias quia. Vero tempore ipsa quis asperiores vitae ab ad perspiciatis eos magni architecto! Eum, harum eveniet. Corporis fugit sit consequatur recusandae magnam!</p>
                                 </div>
                             </div>
                         </div>
@@ -120,11 +119,54 @@
             </div>
         </section>
         
-        <section class="about">
 
+        <section id="intructors" class="bg-light">
+            <div class="container p-5">
+                <h2>Our instructors</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et deleniti cumque, accusamus corporis neque adipisci repudiandae velit facere suscipit modi impedit maxime hic vero voluptas voluptate laborum exercitationem reprehenderit, consectetur alias dolore pariatur ut libero, porro minus. Eaque distinctio soluta consequatur blanditiis excepturi facilis dolores qui placeat, quidem praesentium ea.</p>
+                
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                    <div class="card h-100 bg-success border border-0 overflow-hidden">
+                      <img src="assets/img/instructor1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title"><strong>— Juliette</strong></h5>
+                        <p class="card-text">"Yoga is not to be performed; it is to be lived. Yoga doesn’t care about what you have been; it cares about the person you are becoming." Aadil Palkhivala</p>
+                        <p class="card-text text-center"><small class="text-muted"><i class="bi bi-instagram"></i> <i class="bi bi-envelope-paper-heart"></i></small></p>
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="col">
+                    <div class="card h-100 bg-success border border-0 overflow-hidden">
+                        <img src="assets/img/instructor2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"><strong>— Peter</strong></h5>
+                          <p class="card-text">"Move your joints every day. You have to find your own tricks. Bury your mind deep in your heart, and watch the body move by itself." Dharma Mittra</p>
+                          <p class="card-text text-center"><small class="text-muted"><i class="bi bi-instagram"></i> <i class="bi bi-envelope-paper-heart"></i></small></p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="card h-100 bg-success border border-0 overflow-hidden">
+                        <img src="assets/img/instructor3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"><strong>— Clara</strong></h5>
+                          <p class="card-text">"Yoga is really trying to liberate us from… shame about our bodies. To love your body is a very important thing — I think the health of your mind depends on your being able to love your body." Rodney Yee</p>
+                          <p class="card-text text-center"><small class="text-muted"><i class="bi bi-instagram"></i> <i class="bi bi-envelope-paper-heart"></i></small></p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+            </div>
         </section>
 
 
+        <section id="contact">
+
+        </section>
 
     </main>
 
